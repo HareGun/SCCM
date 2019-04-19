@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=L5 Old Footprint=L-0630 New Footprint=L-0420
+Change Component Footprint: Designator=L3 Old Footprint=L-0850 New Footprint=L-0630
+Change Component Footprint: Designator=L4 Old Footprint=L-0850 New Footprint=L-0630
+Change Component Comment : Designator=L3 Old Comment=MHCC10040-5R6M New Comment=MHCI06030-5R6M
+Change Component Comment : Designator=L4 Old Comment=MHCC10040-6R8M New Comment=MHCI06030-6R8M

@@ -1,0 +1,85 @@
+.\objects\buzzer.o: ..\..\Devices\Buzzer.c
+.\objects\buzzer.o: ..\..\Devices\Buzzer.h
+.\objects\buzzer.o: ..\..\User\user_common.h
+.\objects\buzzer.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\buzzer.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\buzzer.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\buzzer.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Include\arm_math.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\buzzer.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
+.\objects\buzzer.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\buzzer.o: ..\..\User\stm32f4xx_conf.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h
+.\objects\buzzer.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
+.\objects\buzzer.o: ..\..\User\binary.h
+.\objects\buzzer.o: ..\..\User\UserMath.h
+.\objects\buzzer.o: ..\..\User\typedefs.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\FreeRTOS.h
+.\objects\buzzer.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\buzzer.o: ..\..\User\FreeRTOSConfig.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\projdefs.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\portable.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\deprecated_definitions.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\mpu_wrappers.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\task.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\list.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\queue.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\croutine.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\list.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\event_groups.h
+.\objects\buzzer.o: ..\..\Libraries\FreeRTOS\include\timers.h
+.\objects\buzzer.o: ..\..\BSP\delay.h
+.\objects\buzzer.o: ..\..\User\user_common.h
+.\objects\buzzer.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\buzzer.o: ..\..\BSP\NVIC.h
+.\objects\buzzer.o: ..\..\BSP\USART.h
+.\objects\buzzer.o: ..\..\BSP\I2C_SW.h
+.\objects\buzzer.o: ..\..\BSP\SPI_HW.h
+.\objects\buzzer.o: ..\..\BSP\CAN.h
+.\objects\buzzer.o: ..\..\BSP\TIM.h
+.\objects\buzzer.o: ..\..\Devices\LED.h
+.\objects\buzzer.o: ..\..\Devices\key.h
+.\objects\buzzer.o: ..\..\Devices\DR16_Receiver.h
+.\objects\buzzer.o: ..\..\Devices\MC01_JudgeSystem.h
+.\objects\buzzer.o: ..\..\Apps\Filter.h
+.\objects\buzzer.o: ..\..\Apps\PID.h
+.\objects\buzzer.o: ..\..\Apps\DevicesMonitor.h
+.\objects\buzzer.o: ..\..\Apps\Ramp.h
+.\objects\buzzer.o: ..\..\Tasks\SystemInit_Tasks.h
+.\objects\buzzer.o: ..\..\Tasks\DevicesMonitor_Tasks.h
+.\objects\buzzer.o: ..\..\Tasks\Chassis_Task.h

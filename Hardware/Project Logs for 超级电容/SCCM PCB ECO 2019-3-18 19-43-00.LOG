@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=GND Pin=P1-5
+Removed Pin From Net: NetName=GND Pin=P1-6
+Removed Pin From Net: NetName=GND Pin=P2-3
+Removed Pin From Net: NetName=GND Pin=P2-4
+Removed Pin From Net: NetName=CAN_H Pin=P4-1
+Removed Pin From Net: NetName=CAN_L Pin=P4-2
+Removed Pin From Net: NetName=GND Pin=P4-3
+Removed Pin From Net: NetName=GND Pin=P4-4
+Removed Member From Class: ClassName=MCU Member=P4
+Change Component Footprint: Designator=P2 Old Footprint=SM02B-GHS-TB New Footprint=XH_2-SLEEP
+Change Component Footprint: Designator=P1 Old Footprint=SM04B-GHS-TB New Footprint=XH_3-sleep
+Change Component Comment : Designator=P2 Old Comment=GH02 New Comment=XH_2
+Change Component Comment : Designator=P1 Old Comment=GH04 New Comment=XH_3
+Added Component: Designator=R11(R-0603-L)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SW1(KEY-YD-3414)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC_3V3 Pin=R11-1
+Added Pin To Net: NetName=USER_SW Pin=R11-2
+Added Pin To Net: NetName=GND Pin=SW1-1
+Added Pin To Net: NetName=GND Pin=SW1-1
+Added Pin To Net: NetName=USER_SW Pin=SW1-2
+Added Pin To Net: NetName=USER_SW Pin=SW1-2
+Added Pin To Net: NetName=NetP1_1 Pin=P1-1
+Added Pin To Net: NetName=NetP1_1 Pin=R3-1
+Added Net: Name=NetP1_1
+Added Member To Class: ClassName=MCU Member=Component R11 10K
+Added Member To Class: ClassName=MCU Member=Component SW1 SW_USER

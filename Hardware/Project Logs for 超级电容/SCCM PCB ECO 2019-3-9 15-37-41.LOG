@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=P7 Old Footprint=XT60PW-F New Footprint=XT30PW-F
+Change Component Footprint: Designator=P5 Old Footprint=XT60PW-M New Footprint=XT30PW-M
+Change Component Footprint: Designator=P6 Old Footprint=XT60PW-M New Footprint=XT30PW-M
+Change Component Comment : Designator=P7 Old Comment=XT60PW-F New Comment=XT30PW_F
+Change Component Comment : Designator=P5 Old Comment=XT60PW-F New Comment=XT30PW_M
+Change Component Comment : Designator=P6 Old Comment=XT60PW-F New Comment=XT30PW_M
+Added Room: Name=PowerPath

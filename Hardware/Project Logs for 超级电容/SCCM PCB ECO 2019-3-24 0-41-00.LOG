@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=GND Pin=R15-1
+Removed Pin From Net: NetName=LED_CAPLOW Pin=U1-13
+Removed Pin From Net: NetName=LED_CAPFULL Pin=U1-14
+Removed Pin From Net: NetName=POWER_SW Pin=U1-15
+Removed Pin From Net: NetName=LED_MODE Pin=U1-21
+Removed Pin From Net: NetName=LED_ID Pin=U1-22
+Change Component Footprint: Designator=SW1 Old Footprint=KEY-4P-4.2*3.4*2.5 New Footprint=KEY-YD-3414
+Added Component: Designator=Q11(SOT-23-3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R12(R-0603-L)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R57(R-0603-L)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R58(R-0603-L)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=Q11-2
+Added Pin To Net: NetName=VCC_5V3 Pin=R12-2
+Added Pin To Net: NetName=GND Pin=R58-1
+Added Pin To Net: NetName=POWER_SW Pin=U1-13
+Added Pin To Net: NetName=LED_ID Pin=U1-14
+Added Pin To Net: NetName=LED_MODE Pin=U1-15
+Added Pin To Net: NetName=LED_CAPLOW Pin=U1-21
+Added Pin To Net: NetName=LED_CAPFULL Pin=U1-22
+Added Pin To Net: NetName=Boost_EN Pin=R57-2
+Added Pin To Net: NetName=Boost_EN Pin=U1-25
+Added Net: Name=Boost_EN
+Added Pin To Net: NetName=NetQ11_1 Pin=Q11-1
+Added Pin To Net: NetName=NetQ11_1 Pin=R57-1
+Added Pin To Net: NetName=NetQ11_1 Pin=R58-2
+Added Net: Name=NetQ11_1
+Added Pin To Net: NetName=NetQ11_3 Pin=Q11-3
+Added Pin To Net: NetName=NetQ11_3 Pin=R12-1
+Added Pin To Net: NetName=NetQ11_3 Pin=R15-1
+Added Net: Name=NetQ11_3
+Added Member To Class: ClassName=Boost Member=Component Q11 MOS-N
+Added Member To Class: ClassName=Boost Member=Component R12 10K
+Added Member To Class: ClassName=Boost Member=Component R57 1K
+Added Member To Class: ClassName=Boost Member=Component R58 10K

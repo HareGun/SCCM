@@ -1,0 +1,85 @@
+.\objects\cansend_tasks.o: ..\..\Tasks\CANSend_Tasks.c
+.\objects\cansend_tasks.o: ..\..\Tasks\CANSend_Tasks.h
+.\objects\cansend_tasks.o: ..\..\User\user_common.h
+.\objects\cansend_tasks.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\cansend_tasks.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\cansend_tasks.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\cansend_tasks.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Include\arm_math.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\cansend_tasks.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
+.\objects\cansend_tasks.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\cansend_tasks.o: ..\..\User\stm32f4xx_conf.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h
+.\objects\cansend_tasks.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
+.\objects\cansend_tasks.o: ..\..\User\binary.h
+.\objects\cansend_tasks.o: ..\..\User\UserMath.h
+.\objects\cansend_tasks.o: ..\..\User\typedefs.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\FreeRTOS.h
+.\objects\cansend_tasks.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\cansend_tasks.o: ..\..\User\FreeRTOSConfig.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\projdefs.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\portable.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\deprecated_definitions.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\mpu_wrappers.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\task.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\list.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\queue.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\croutine.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\list.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\event_groups.h
+.\objects\cansend_tasks.o: ..\..\Libraries\FreeRTOS\include\timers.h
+.\objects\cansend_tasks.o: ..\..\BSP\delay.h
+.\objects\cansend_tasks.o: ..\..\User\user_common.h
+.\objects\cansend_tasks.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\cansend_tasks.o: ..\..\BSP\NVIC.h
+.\objects\cansend_tasks.o: ..\..\BSP\USART.h
+.\objects\cansend_tasks.o: ..\..\BSP\I2C_SW.h
+.\objects\cansend_tasks.o: ..\..\BSP\SPI_HW.h
+.\objects\cansend_tasks.o: ..\..\BSP\CAN.h
+.\objects\cansend_tasks.o: ..\..\BSP\TIM.h
+.\objects\cansend_tasks.o: ..\..\Devices\LED.h
+.\objects\cansend_tasks.o: ..\..\Devices\key.h
+.\objects\cansend_tasks.o: ..\..\Devices\DR16_Receiver.h
+.\objects\cansend_tasks.o: ..\..\Devices\MC01_JudgeSystem.h
+.\objects\cansend_tasks.o: ..\..\Apps\Filter.h
+.\objects\cansend_tasks.o: ..\..\Apps\PID.h
+.\objects\cansend_tasks.o: ..\..\Apps\DevicesMonitor.h
+.\objects\cansend_tasks.o: ..\..\Apps\Ramp.h
+.\objects\cansend_tasks.o: ..\..\Tasks\SystemInit_Tasks.h
+.\objects\cansend_tasks.o: ..\..\Tasks\DevicesMonitor_Tasks.h
+.\objects\cansend_tasks.o: ..\..\Tasks\Chassis_Task.h

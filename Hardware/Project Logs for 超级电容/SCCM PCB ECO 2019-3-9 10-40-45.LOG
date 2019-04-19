@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=VCC_CAP Pin=C17-2
+Removed Pin From Net: NetName=GND Pin=C54-1
+Removed Pin From Net: NetName=VCC_5V3 Pin=C54-2
+Removed Member From Class: ClassName=Power Member=C54
+Change Component Footprint: Designator=C20 Old Footprint=CAP-0603-L New Footprint=CAP-0805-L
+Change Component Footprint: Designator=C18 Old Footprint=CAP-0603-L New Footprint=CAP-1206-L
+Change Component Comment : Designator=C18 Old Comment=4.7nF New Comment=100uF
+Change Component Comment : Designator=L3 Old Comment=MHCC10040-5R6M New Comment=MHCC10040-6R8M
+Added Pin To Net: NetName=VCC_CAPBOOST Pin=C17-2
+Added Pin To Net: NetName=VCC_CAPBOOST Pin=C18-2
+Added Pin To Net: NetName=NetC19_2 Pin=C19-2
+Added Pin To Net: NetName=NetC19_2 Pin=U4-2
+Added Net: Name=NetC19_2

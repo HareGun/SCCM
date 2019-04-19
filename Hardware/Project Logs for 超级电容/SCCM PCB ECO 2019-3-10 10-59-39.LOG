@@ -1,0 +1,5 @@
+Added Component: Designator=C55(CAP-1206-L)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=C55-1
+Added Pin To Net: NetName=VCC_CAP Pin=C55-2
+Added Member To Class: ClassName=Boost Member=Component C55 100uF

@@ -1,0 +1,85 @@
+.\objects\gy_imu.o: ..\..\Devices\GY_IMU.c
+.\objects\gy_imu.o: ..\..\Devices\GY_IMU.h
+.\objects\gy_imu.o: ..\..\User\user_common.h
+.\objects\gy_imu.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gy_imu.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\gy_imu.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\gy_imu.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Include\arm_math.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\gy_imu.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
+.\objects\gy_imu.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\gy_imu.o: ..\..\User\stm32f4xx_conf.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h
+.\objects\gy_imu.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
+.\objects\gy_imu.o: ..\..\User\binary.h
+.\objects\gy_imu.o: ..\..\User\UserMath.h
+.\objects\gy_imu.o: ..\..\User\typedefs.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\FreeRTOS.h
+.\objects\gy_imu.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\gy_imu.o: ..\..\User\FreeRTOSConfig.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\projdefs.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\portable.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\deprecated_definitions.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\mpu_wrappers.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\task.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\list.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\queue.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\croutine.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\list.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\event_groups.h
+.\objects\gy_imu.o: ..\..\Libraries\FreeRTOS\include\timers.h
+.\objects\gy_imu.o: ..\..\BSP\delay.h
+.\objects\gy_imu.o: ..\..\User\user_common.h
+.\objects\gy_imu.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\gy_imu.o: ..\..\BSP\NVIC.h
+.\objects\gy_imu.o: ..\..\BSP\USART.h
+.\objects\gy_imu.o: ..\..\BSP\I2C_SW.h
+.\objects\gy_imu.o: ..\..\BSP\SPI_HW.h
+.\objects\gy_imu.o: ..\..\BSP\CAN.h
+.\objects\gy_imu.o: ..\..\BSP\TIM.h
+.\objects\gy_imu.o: ..\..\Devices\LED.h
+.\objects\gy_imu.o: ..\..\Devices\key.h
+.\objects\gy_imu.o: ..\..\Devices\DR16_Receiver.h
+.\objects\gy_imu.o: ..\..\Devices\MC01_JudgeSystem.h
+.\objects\gy_imu.o: ..\..\Apps\Filter.h
+.\objects\gy_imu.o: ..\..\Apps\PID.h
+.\objects\gy_imu.o: ..\..\Apps\DevicesMonitor.h
+.\objects\gy_imu.o: ..\..\Apps\Ramp.h
+.\objects\gy_imu.o: ..\..\Tasks\SystemInit_Tasks.h
+.\objects\gy_imu.o: ..\..\Tasks\DevicesMonitor_Tasks.h
+.\objects\gy_imu.o: ..\..\Tasks\Chassis_Task.h

@@ -1,0 +1,85 @@
+.\objects\frictionmotor.o: ..\..\Devices\frictionMotor.c
+.\objects\frictionmotor.o: ..\..\Devices\frictionMotor.h
+.\objects\frictionmotor.o: ..\..\User\user_common.h
+.\objects\frictionmotor.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\frictionmotor.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\frictionmotor.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\frictionmotor.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Include\arm_math.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\frictionmotor.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
+.\objects\frictionmotor.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\frictionmotor.o: ..\..\User\stm32f4xx_conf.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h
+.\objects\frictionmotor.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
+.\objects\frictionmotor.o: ..\..\User\binary.h
+.\objects\frictionmotor.o: ..\..\User\UserMath.h
+.\objects\frictionmotor.o: ..\..\User\typedefs.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\FreeRTOS.h
+.\objects\frictionmotor.o: C:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\frictionmotor.o: ..\..\User\FreeRTOSConfig.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\projdefs.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\portable.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\deprecated_definitions.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\mpu_wrappers.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\task.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\list.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\queue.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\croutine.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\list.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\event_groups.h
+.\objects\frictionmotor.o: ..\..\Libraries\FreeRTOS\include\timers.h
+.\objects\frictionmotor.o: ..\..\BSP\delay.h
+.\objects\frictionmotor.o: ..\..\User\user_common.h
+.\objects\frictionmotor.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
+.\objects\frictionmotor.o: ..\..\BSP\NVIC.h
+.\objects\frictionmotor.o: ..\..\BSP\USART.h
+.\objects\frictionmotor.o: ..\..\BSP\I2C_SW.h
+.\objects\frictionmotor.o: ..\..\BSP\SPI_HW.h
+.\objects\frictionmotor.o: ..\..\BSP\CAN.h
+.\objects\frictionmotor.o: ..\..\BSP\TIM.h
+.\objects\frictionmotor.o: ..\..\Devices\LED.h
+.\objects\frictionmotor.o: ..\..\Devices\key.h
+.\objects\frictionmotor.o: ..\..\Devices\DR16_Receiver.h
+.\objects\frictionmotor.o: ..\..\Devices\MC01_JudgeSystem.h
+.\objects\frictionmotor.o: ..\..\Apps\Filter.h
+.\objects\frictionmotor.o: ..\..\Apps\PID.h
+.\objects\frictionmotor.o: ..\..\Apps\DevicesMonitor.h
+.\objects\frictionmotor.o: ..\..\Apps\Ramp.h
+.\objects\frictionmotor.o: ..\..\Tasks\SystemInit_Tasks.h
+.\objects\frictionmotor.o: ..\..\Tasks\DevicesMonitor_Tasks.h
+.\objects\frictionmotor.o: ..\..\Tasks\Chassis_Task.h

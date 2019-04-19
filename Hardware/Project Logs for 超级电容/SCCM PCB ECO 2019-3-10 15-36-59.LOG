@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NetP1_3 Pin=R3-1
+Change Component Footprint: Designator=P2 Old Footprint=XH_2-SLEEP New Footprint=BM02B-GHS-TBT
+Change Component Footprint: Designator=P4 Old Footprint=XH_2-SLEEP New Footprint=BM02B-GHS-TBT
+Change Component Footprint: Designator=P1 Old Footprint=XH_3-SLEEP New Footprint=SM04B-GHS-TB
+Change Component Comment : Designator=P2 Old Comment=XH_2 New Comment=GH02
+Change Component Comment : Designator=P4 Old Comment=XH_2 New Comment=GH02
+Change Component Comment : Designator=P1 Old Comment=XH_3 New Comment=GH04
+Added Pin To Net: NetName=GND Pin=P1-5
+Added Pin To Net: NetName=GND Pin=P1-6
+Added Pin To Net: NetName=GND Pin=P2-3
+Added Pin To Net: NetName=GND Pin=P2-4
+Added Pin To Net: NetName=GND Pin=P4-3
+Added Pin To Net: NetName=GND Pin=P4-4
+Added Pin To Net: NetName=NetP1_3 Pin=R4-1
+Added Pin To Net: NetName=NetP1_4 Pin=P1-4
+Added Pin To Net: NetName=NetP1_4 Pin=R3-1
+Added Net: Name=NetP1_4

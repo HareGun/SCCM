@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=VCC_3V3 Pin=R11-1
+Removed Pin From Net: NetName=USER_SW Pin=R11-2
+Removed Pin From Net: NetName=GND Pin=SW1-1
+Removed Pin From Net: NetName=GND Pin=SW1-1
+Removed Pin From Net: NetName=USER_SW Pin=SW1-2
+Removed Pin From Net: NetName=USER_SW Pin=SW1-2
+Removed Member From Class: ClassName=MCU Member=R11
+Removed Member From Class: ClassName=MCU Member=SW1

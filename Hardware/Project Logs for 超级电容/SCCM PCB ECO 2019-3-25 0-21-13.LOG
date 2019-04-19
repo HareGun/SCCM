@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=BQ_EN Pin=U1-39
+Removed Pin From Net: NetName=BQ_STAT Pin=U1-40
+Removed Pin From Net: NetName=BQ_PG Pin=U1-41
+Change Component Footprint: Designator=L3 Old Footprint=L-1350 New Footprint=L-0630
+Change Component Footprint: Designator=P7 Old Footprint=XT60PW-F New Footprint=XT30PW-F
+Added Pin To Net: NetName=BQ_PG Pin=U1-39
+Added Pin To Net: NetName=BQ_EN Pin=U1-40
+Added Pin To Net: NetName=BQ_STAT Pin=U1-41
