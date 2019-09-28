@@ -65,13 +65,21 @@ void uart_sendData(void){
   
 }
 
+can_dataSendDebug_t can_dataSendDebug;
+
 void can_sendData(void){
   can_dataSend.chassisPower = Judge_PowerHeatData.chassisPower;
 	can_dataSend.chassis_Buff = Judge_PowerHeatData.chassisPowerBuffer;
 	can_dataSend.cap_usable = measurement.cap_usable;
+  can_dataSend.cap_level = measurement.cap_level;
+    
 	
 	CAN_SendData(CAN1, CAN_ID_STD, CAN1_TX_ID, can_dataSend.data);
   
+//  can_dataSendDebug.chassis_volt = Judge_PowerHeatData.chassisVolt*1000;
+//  can_dataSendDebug.chassis_current = Judge_PowerHeatData.chassisCurrent*1000;
+//  can_dataSendDebug.chassisPower = Judge_PowerHeatData.chassisPower;
+//  CAN_SendData(CAN1, CAN_ID_STD, 0x602, can_dataSendDebug.data);
 }
 
 void can_getInfo(CanRxMsg RxMessage){

@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=C17-1
-Removed Pin From Net: NetName=VCC_CAPBOOST Pin=C17-2
-Removed Pin From Net: NetName=GND Pin=C18-1
-Removed Pin From Net: NetName=VCC_CAPBOOST Pin=C18-2
-Removed Member From Class: ClassName=Boost Member=C17
-Removed Member From Class: ClassName=Boost Member=C18

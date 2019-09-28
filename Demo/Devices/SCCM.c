@@ -15,7 +15,6 @@
 
 SCCM_t SCCM;
 
-
 /**
   * @brief  从CAN报文中获取信息
   * @param  RxMessage 	CAN报文接收结构体

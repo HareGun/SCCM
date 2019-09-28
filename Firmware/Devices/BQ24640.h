@@ -22,7 +22,7 @@
 #define BQ_GET_PG_PIN()               !GPIO_ReadInputDataBit(BQ_PG_GPIO_PORT, BQ_PG_PIN)
 
 #define BQ_ISET_RATIO                 (2.0f/10.0f)
-#define BQ_CHARGE_CURRENT_MAX         (4.0f)
+#define BQ_CHARGE_CURRENT_MAX         (8.0f)
 
 
 typedef enum{

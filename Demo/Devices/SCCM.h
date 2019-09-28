@@ -14,6 +14,7 @@ typedef union{
     float chassis_power;    /* 底盘功率，单位：W */
     uint8_t chassis_buff;   /* 底盘功率缓冲 */
     uint8_t cap_usable;    /* 电容可以进行输出 */
+    int8_t cap_level;     /* 电容电量百分比 */
   };
 }SCCM_ReceiveData_t;
 
@@ -26,10 +27,21 @@ typedef union{
   };
 }SCCM_SendData_t;
 
+//typedef union{
+//  uint8_t data[8];
+//  
+   typedef struct{
+    float chassisPower;    /* 底盘功率，单位：W */
+			uint16_t chassis_volt; 					/* 底盘输出电压 单位 毫伏 */
+			uint16_t chassis_current; 			/* 底盘输出电流 单位 毫安 */
+  }SCCM_Debug_t;
+  
+//};
+
 typedef struct{
   SCCM_ReceiveData_t receiveData;
   SCCM_SendData_t sendData;
-  
+  SCCM_Debug_t SCCM_Debug;
   uint16_t infoUpdateFrame;   /* 帧率 */
   uint8_t infoUpdateFlag;     /* 更新标志 */
   uint8_t offLineFlag;        /* 掉线标记 */

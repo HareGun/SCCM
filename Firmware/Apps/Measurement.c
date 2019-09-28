@@ -28,7 +28,7 @@ static void Measurement_GPIO_Init(void){
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	
 	GPIO_InitStructure.GPIO_Pin = BAT_VAD_PIN | BAT_IAD_PIN |
-                                CAP_VAD_PIN;
+                                CAP_VAD_PIN | BOOST_VAD_PIN;
 	GPIO_Init(BAT_VAD_GPIO_PORT, &GPIO_InitStructure);
   
 }
@@ -54,11 +54,12 @@ static void Measurement_ADC_Config(void){
 	ADC_Init(ADC1, &ADC_InitStructure);
 	
 	//配置ADC时钟分频	RCC_PCLK2_Div2/4/6/8分频
-	RCC_ADCCLKConfig(RCC_PCLK2_Div6);
+	RCC_ADCCLKConfig(RCC_PCLK2_Div8);
 	//配置规则序列ADC通道，转换顺序和采样时间
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_55Cycles5);
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_1, 2, ADC_SampleTime_55Cycles5);
   ADC_RegularChannelConfig(ADC1, ADC_Channel_2, 3, ADC_SampleTime_55Cycles5);
+  ADC_RegularChannelConfig(ADC1, ADC_Channel_4, 4, ADC_SampleTime_55Cycles5);
 
 	//使能ADC
 	ADC_Cmd(ADC1, ENABLE);
@@ -113,8 +114,8 @@ static void Measurement_DMA_Config(void){
 	//初始化结构体
 	DMA_Init(DMA1_Channel1, &DMA_InitStructure);
   
-  NVIC_Config(DMA1_Channel1_IRQn, 2, 0);
-  DMA_ITConfig(DMA1_Channel1, DMA_IT_TC, ENABLE);
+//  NVIC_Config(DMA1_Channel1_IRQn, 2, 0);
+//  DMA_ITConfig(DMA1_Channel1, DMA_IT_TC, ENABLE);
 	//使能DMA
 	DMA_Cmd(DMA1_Channel1 , ENABLE);
   
@@ -137,34 +138,45 @@ void Measurement_Init(void){
   Measurement_ADC_Config();
   Measurement_DMA_Config();
   
+  measurement.bat_voltage_offset_k = 1.2664f;
+  measurement.bat_current_offset_k = 1.0929f;
+  measurement.cap_voltage_offset_k = 1.0f;
+  measurement.boost_voltage_offset_k = 1.0f;
+  
+  measurement.bat_voltage_offset_b = -5.46;
+  measurement.bat_current_offset_b = 0.20f;
+  measurement.cap_voltage_offset_b = 0.0f;
+  measurement.boost_voltage_offset_b = 0.0f;
+  
 }
-
+float curr_K = 1;
 /**
   * @brief  测量数据更新
   * @param  None
   * @retval None
   */
 void Measurement_update(void){
-	measurement.bat_voltage_RAW = GET_BAT_VOL( (float)measurement.ADC_Value[0]/4096.0f*3.3f );
-  measurement.bat_current_RAW = GET_BAT_CURR( (float)measurement.ADC_Value[1]/4096.0f*3.3f ) + BAT_CURR_OFFSET;
-  measurement.cap_voltage_RAW = GET_CAP_VOL( (float)measurement.ADC_Value[2]/4096.0f*3.3f );
+	measurement.bat_voltage_RAW = GET_BAT_VOL( (float)measurement.ADC_Value[0]/4096.0f*3.3f ) *
+                                measurement.bat_voltage_offset_k + measurement.bat_voltage_offset_b;
+  
+  measurement.bat_current_RAW = GET_BAT_CURR( (float)measurement.ADC_Value[1]/4096.0f*3.3f ) * 
+                                measurement.bat_current_offset_k + measurement.bat_current_offset_b;
+  
+  measurement.cap_voltage_RAW = GET_CAP_VOL( (float)measurement.ADC_Value[2]/4096.0f*3.3f ) * 
+                                measurement.cap_voltage_offset_k + measurement.cap_voltage_offset_b;
+  
+  measurement.boost_voltage_RAW = GET_BOOST_VOL( (float)measurement.ADC_Value[3]/4096.0f*3.3f) * 
+                                measurement.boost_voltage_offset_k + measurement.boost_voltage_offset_b;
   
   Filter_IIRLPF(&measurement.bat_voltage_RAW,&measurement.bat_voltage, BAT_VOL_LPFATTFACTOR);
   Filter_IIRLPF(&measurement.bat_current_RAW,&measurement.bat_current, BAT_CURR_LPFATTFACTOR);
   Filter_IIRLPF(&measurement.cap_voltage_RAW,&measurement.cap_voltage, CAP_VOL_LPFATTFACTOR);
+  Filter_IIRLPF(&measurement.boost_voltage_RAW,&measurement.boost_voltage, BOOST_VOL_LPFATTFACTOR);
   
-  if(measurement.cap_voltage < 10.0f){
-    measurement.cap_status = CAP_STAT_LOW;
-    measurement.cap_usable = 0;
-  }
-  else if(measurement.cap_voltage > 12.0f && measurement.cap_voltage < 18.0f){
-    measurement.cap_status = CAP_STAT_MID;
-    measurement.cap_usable = 1;
-  }
-  else if(measurement.cap_voltage > 20.0f){
-    measurement.cap_status = CAP_STAT_FULL;
-    measurement.cap_usable = 1;
-  }
+  measurement.cap_level = (measurement.cap_voltage/* - CAP_LOW_VOL*/)/(CAP_FULL_VOL/* - CAP_LOW_VOL*/)*100.0f;
+  
+
+  
 }
 
 

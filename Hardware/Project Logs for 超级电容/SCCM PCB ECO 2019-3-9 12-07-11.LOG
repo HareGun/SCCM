@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=POWER_SW Pin=U1-14
-Removed Pin From Net: NetName=LED_CAPFULL Pin=U1-19
-Removed Pin From Net: NetName=LED_CAPLOW Pin=U1-20
-Added Pin To Net: NetName=POWER_SW Pin=U1-13
-Added Pin To Net: NetName=LED_CAPFULL Pin=U1-14
-Added Pin To Net: NetName=LED_CAPLOW Pin=U1-15

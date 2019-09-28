@@ -33,6 +33,7 @@
 
 #include "SCCM.h"
 #include "Chassis_control.h"
+#include "MC01_JudgeSystem.h"
 
 
 /** @addtogroup STM32F4xx_StdPeriph_Examples
@@ -292,10 +293,10 @@ void USART6_IRQHandler(void){
 		
 		uint16_t DMA_Counter = DMA_GetCurrDataCounter(USART6_RX_DMA_STREAM);
 		
-//		Judge_getInfo(JUDGESYSTEM_PACKSIZE-DMA_Counter);
-//		
-//		//设置传输数据长度
-//    DMA_SetCurrDataCounter(USART6_RX_DMA_STREAM,JUDGESYSTEM_PACKSIZE);
+		Judge_getInfo(JUDGESYSTEM_PACKSIZE-DMA_Counter);
+		
+		//设置传输数据长度
+    DMA_SetCurrDataCounter(USART6_RX_DMA_STREAM,JUDGESYSTEM_PACKSIZE);
 		//打开DMA
 		DMA_Cmd(USART6_RX_DMA_STREAM, ENABLE);
 		
@@ -308,7 +309,9 @@ void USART6_IRQHandler(void){
 	}
 }
 
-
+uint16_t judge_curr = 0;
+uint16_t judge_vol = 0;
+uint16_t judge_power = 0;
 /**
   * @brief  CAN1 FIFO0 接收中断服务函数
   * @param  None
@@ -336,6 +339,14 @@ void CAN1_RX0_IRQHandler(void){
       
       case SCCM_READ_ID:
         SCCM_getInfo(RxMessage);
+      break;
+      
+       case 0x602:
+        memcpy(&SCCM.SCCM_Debug, RxMessage.Data, sizeof(uint8_t[8]));
+        judge_curr = JudgeSYS.PowerHeatData.data.chassis_current;
+        judge_vol = JudgeSYS.PowerHeatData.data.chassis_volt;
+        judge_power = JudgeSYS.PowerHeatData.data.chassis_power;
+       
       break;
       
       

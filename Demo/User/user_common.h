@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <arm_math.h>
 #include "stm32f4xx.h"
+#include "SEGGER_RTT.h"
 
 /* --- User Public Header --- */
 #include "binary.h"

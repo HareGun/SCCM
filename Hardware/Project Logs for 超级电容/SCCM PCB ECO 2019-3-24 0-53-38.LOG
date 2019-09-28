@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=Boost_EN Pin=U1-25
-Removed Pin From Net: NetName=USER_SW Pin=U1-27
-Added Pin To Net: NetName=USER_SW Pin=U1-25
-Added Pin To Net: NetName=Boost_EN Pin=U1-27

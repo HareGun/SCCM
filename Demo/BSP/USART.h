@@ -100,15 +100,15 @@
 /********UART4_DMA_define_END********/
 
 /********USART6_Pin_define********/
-#define USART6_TX_GPIO_CLK          RCC_AHB1Periph_GPIOG
-#define USART6_TX_GPIO_PORT         GPIOG
-#define USART6_TX_Pin          	 	GPIO_Pin_14
-#define USART6_TX_PINSOURCE			GPIO_PinSource14
+#define USART6_TX_GPIO_CLK          RCC_AHB1Periph_GPIOC
+#define USART6_TX_GPIO_PORT         GPIOC
+#define USART6_TX_Pin          	 	GPIO_Pin_6
+#define USART6_TX_PINSOURCE			GPIO_PinSource6
 
-#define USART6_RX_GPIO_CLK          RCC_AHB1Periph_GPIOG
-#define USART6_RX_GPIO_PORT         GPIOG
-#define USART6_RX_Pin           	GPIO_Pin_9
-#define USART6_RX_PINSOURCE			GPIO_PinSource9
+#define USART6_RX_GPIO_CLK          RCC_AHB1Periph_GPIOC
+#define USART6_RX_GPIO_PORT         GPIOC
+#define USART6_RX_Pin           	GPIO_Pin_7
+#define USART6_RX_PINSOURCE			GPIO_PinSource7
 /********USART6_Pin_define_END********/
 
 /********USART6_Priority_define************/

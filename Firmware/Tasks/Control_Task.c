@@ -37,11 +37,20 @@ void BQ_setChargePower(float power_W){
     power_W = 0;
   }
   
-  if(measurement.bat_voltage != 0){
-    control.chargeCurrent = power_W/measurement.bat_voltage;
+  if(measurement.cap_voltage != 0){
+    control.chargeCurrent = power_W/measurement.cap_voltage;
+    if(control.chargeCurrent > BQ_CHARGE_CURRENT_MAX){
+      control.chargeCurrent = BQ_CHARGE_CURRENT_MAX;
+    
+    }
   }
   else{
-    control.chargeCurrent = 0;
+    if(power_W > 0.0f){
+      control.chargeCurrent = 0.5f;
+    }
+    else{
+      control.chargeCurrent = 0;
+    }
   }
   
   BQ_setChargeCurrent(control.chargeCurrent);
@@ -65,6 +74,7 @@ void Control_setMode(control_mode_e mode){
 void vTaskControl(void *pvParameters)
 {
   TickType_t xLastWakeTime;
+  uint16_t timeCounter = 0;
   
   PowerPath_Init();
   LM3488_Init();
@@ -77,6 +87,34 @@ void vTaskControl(void *pvParameters)
 	
 	while(1)
 	{
+    if(!control.boostError){
+      if(measurement.cap_voltage < 9.0f){
+        measurement.cap_status = CAP_STAT_LOW;
+        measurement.cap_usable = 0;
+      }
+      else if(measurement.cap_voltage > 11.0f && measurement.cap_voltage < 18.0f){
+        measurement.cap_status = CAP_STAT_MID;
+        measurement.cap_usable = 1;
+      }
+      else if(measurement.cap_voltage > 20.0f){
+        measurement.cap_status = CAP_STAT_FULL;
+        measurement.cap_usable = 1;
+      }
+    }
+    else{
+      if(measurement.cap_voltage < 18.0f){
+        measurement.cap_status = CAP_STAT_LOW;
+        measurement.cap_usable = 0;
+      }
+      else if(measurement.cap_voltage > 19.0f && measurement.cap_voltage < 20.0f){
+        measurement.cap_status = CAP_STAT_MID;
+        measurement.cap_usable = 1;
+      }
+      else if(measurement.cap_voltage > 20.0f){
+        measurement.cap_status = CAP_STAT_FULL;
+        measurement.cap_usable = 1;
+      }
+    }
     
     switch(control.mode){
       case CONTROL_OFF:
@@ -88,16 +126,31 @@ void vTaskControl(void *pvParameters)
       
       case CONTROL_NORMAL:
         /* 滞回比较 */
-        if(measurement.cap_voltage > 7.0f){
+        if(measurement.cap_voltage > 7.0f && !control.boostError){
           control.boostEnable = 1;
         }
         else if(measurement.cap_voltage < 5.0f){
           control.boostEnable = 0;
         }
         
+        if(control.boostEnable && !control.boostError){
+          if(measurement.boost_voltage < 22.0f){
+            timeCounter++;
+          }
+          else{
+            timeCounter = 0;
+          }
+          
+          if(timeCounter > 100){
+            control.boostError = 1;
+            control.boostEnable = 0;
+          }
+        }
+        
         if(!measurement.cap_usable){
           control.isCapOutput = 0;
         }
+        
       break;
       default:
         control.boostEnable = 0;
@@ -107,6 +160,9 @@ void vTaskControl(void *pvParameters)
         break;
       
     }
+    
+    
+
     
     
     LM3488_EN(control.boostEnable);

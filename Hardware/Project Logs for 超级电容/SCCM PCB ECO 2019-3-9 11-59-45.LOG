@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=LED_ID Pin=U1-21
-Removed Pin From Net: NetName=LED_MODE Pin=U1-22
-Removed Pin From Net: NetName=LED_CAPLOW Pin=U1-25
-Removed Pin From Net: NetName=LED_CAPFULL Pin=U1-26
-Added Pin To Net: NetName=LED_CAPLOW Pin=U1-18
-Added Pin To Net: NetName=LED_CAPFULL Pin=U1-19
-Added Pin To Net: NetName=LED_MODE Pin=U1-21
-Added Pin To Net: NetName=LED_ID Pin=U1-22

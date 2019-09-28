@@ -11,6 +11,7 @@
   
 #include "SystemInit_Tasks.h"
 #include "Command_Task.h"
+#include "MC01_JudgeSystem.h"
 
 
 EventGroupHandle_t xSystemInitEventGroup = NULL;
@@ -28,6 +29,7 @@ void vTaskSystemInit(void *pvParameters)
 	CAN1_QuickInit();
 //	CAN2_QuickInit();
 	DR16_receiverInit();
+  JudgeSystem_Init();
   
   
 

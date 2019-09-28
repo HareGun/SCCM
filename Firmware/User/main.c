@@ -4,6 +4,7 @@
 
 #include "user_common.h"
 #include "SystemInit_Tasks.h"
+#include "SEGGER_SYSVIEW.h"
 
 
 
@@ -71,6 +72,8 @@ int main(void){
   /* SYSTICK初始化 */
   SysTick_Config(SystemCoreClock/1000);
   delay_init();
+  
+  SEGGER_SYSVIEW_Conf();
   
   //创建系统初始化任务
 	xTaskCreate(vTaskSystemInit,   /* 任务函数 */

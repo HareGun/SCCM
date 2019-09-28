@@ -16,6 +16,7 @@ typedef struct{
   float chargePower;    /* 充电功率，单位：W ,范围 0-80W*/
   uint8_t chargeEnable; /* 充电使能 */
   uint8_t boostEnable;  /* 升压使能 */
+  uint8_t boostError; /* 升压出错 */
   uint8_t isCapOutput;  /* 使用电容供电 */
   control_mode_e mode; 
 }control_t;

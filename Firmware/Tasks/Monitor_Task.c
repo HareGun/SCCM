@@ -21,9 +21,11 @@ TaskHandle_t xHandleTaskMonitor = NULL;
 monitor_t monitor;
 
 /* 格式：序列长度-序列间隔-序列... */
-const uint8_t LEDSTAT_FlashSeq[3][15] = {
-  {4,0,0,1,1,0},
-  {8,10,0,1,1,0,0,1,1,0}
+const uint8_t LEDSTAT_FlashSeq[5][20] = {
+  {4,0,0,1,1,0},          /* 一直闪 */
+  {8,10,0,1,1,0,0,1,1,0},  /* 快闪2下 */
+  {12,10,0,1,1,0,0,1,1,0,0,1,1,0},  /* 快闪3下 */
+  {16,10,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0}  /* 快闪4下 */
 };
 
 typedef struct{
@@ -84,13 +86,19 @@ void vTaskMonitor(void *pvParameters)
     
     if(loopCounter_100ms++ > 9){
       /* 主机离线检测 */
-      if(monitor.master_frameCounter < 5){
+      if(monitor.master_frameCounter < 2){
         monitor.master_timeOutCounter++;
         if(monitor.master_timeOutCounter > 20){
           monitor.master_offLineFlag = 1;
           monitor.master_timeOutCounter = 0;
           /* 离线停止输出 */
-          LEDSTAT_Flash.SeqNum = 0;
+          if(control.boostError){
+            /* 升压错误且离线 */
+            LEDSTAT_Flash.SeqNum = 2;
+          }
+          else{
+            LEDSTAT_Flash.SeqNum = 0;
+          }          
           Control_setMode(CONTROL_OFF);
         }
       }
@@ -99,7 +107,13 @@ void vTaskMonitor(void *pvParameters)
         monitor.master_timeOutCounter = 0;
         
         Control_setMode(CONTROL_NORMAL);
-        LEDSTAT_Flash.SeqNum = 1;
+        if(control.boostError){
+          /* 升压错误且在线 */
+          LEDSTAT_Flash.SeqNum = 3;
+        }
+        else{
+          LEDSTAT_Flash.SeqNum = 1;
+        } 
       }
       monitor.master_frameCounter = 0;
       loopCounter_100ms = 0;

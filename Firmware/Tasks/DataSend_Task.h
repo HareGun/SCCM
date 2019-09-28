@@ -37,11 +37,22 @@ typedef union{
    struct{
     float chassisPower;    /* 底盘功率，单位：W */
     uint8_t chassis_Buff;  /* 底盘功率缓冲 */
-    //uint8_t isCapOutput;  /* 电容输出 */
     uint8_t cap_usable;    /* 电容可以进行输出 */
+    int8_t cap_level;     /* 电容电量百分比 */
   };
   
 }can_dataSend_t;
+
+typedef union{
+  uint8_t data[8];
+  
+   struct{
+    float chassisPower;    /* 底盘功率，单位：W */
+			uint16_t chassis_volt; 					/* 底盘输出电压 单位 毫伏 */
+			uint16_t chassis_current; 			/* 底盘输出电流 单位 毫安 */
+  };
+  
+}can_dataSendDebug_t;
 
 typedef union{
   uint8_t data[8];

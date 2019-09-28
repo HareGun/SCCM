@@ -30,6 +30,7 @@
 #include "CAN.h"
 #include "DataSend_Task.h"
 #include "Monitor_Task.h"
+#include "SEGGER_SYSVIEW.h"
 
 
 /** @addtogroup STM32F10x_StdPeriph_Examples
@@ -236,7 +237,12 @@ void USART1_IRQHandler(void){
 void DMA1_Channel1_IRQHandler(void){
   if(DMA_GetITStatus(DMA1_IT_TC1) != RESET)
 	{
-    Measurement_update();
+//    SEGGER_SYSVIEW_RecordEnterISR();
+//    SEGGER_SYSVIEW_Print("DMA ISR\n");
+//    
+//    Measurement_update();
+//    
+//    SEGGER_SYSVIEW_RecordExitISR();
     DMA_ClearITPendingBit(DMA1_IT_TC1);
 	}
   

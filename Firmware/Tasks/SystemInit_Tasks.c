@@ -30,11 +30,10 @@ void vTaskSystemInit(void *pvParameters){
 	//xEventGroupSetBits(xCreatedEventGroup, EventBit_DataOut);
 	
 	/* 任务创建开始 */
-	
-  xTaskCreate(vTaskControl,"Task Control",100,NULL,3,&xHandleTaskControl);
-	xTaskCreate(vTaskPowerCalc,"Task PowerCalc",100,NULL,2,&xHandleTaskPowerCalc);
+	xTaskCreate(vTaskPowerCalc,"Task PowerCalc",256,NULL,3,&xHandleTaskPowerCalc);
+  xTaskCreate(vTaskControl,"Task Control",256,NULL,2,&xHandleTaskControl);
   xTaskCreate(vTaskDataSend,"Task DataSend",256,NULL,1,&xHandleTaskDataSend);
-  xTaskCreate(vTaskMonitor, "Task Monitor", 100, NULL, 0, &xHandleTaskMonitor);
+  xTaskCreate(vTaskMonitor, "Task Monitor", 256, NULL, 0, &xHandleTaskMonitor);
 	
 	//vTaskPrioritySet(NULL, 0);
 	//运行完删除本任务

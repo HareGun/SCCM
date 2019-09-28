@@ -517,6 +517,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Devices\SCCM.c</FilePath>
             </File>
+            <File>
+              <FileName>MC01_JudgeSystem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Devices\MC01_JudgeSystem.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -841,6 +846,31 @@
               <FileName>stm32f4xx_wwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SEEGER/RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\SEEGER\RTT\RTT\SEGGER_RTT.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Libraries\SEEGER\RTT\RTT\SEGGER_RTT.h</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_Conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Libraries\SEEGER\RTT\RTT\SEGGER_RTT_Conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\SEEGER\RTT\RTT\SEGGER_RTT_printf.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1198,7 +1228,7 @@
               <MiscControls></MiscControls>
               <Define>HSE_VALUE=12000000,USE_STDPERIPH_DRIVER,STM32F427_437xx,ARM_MATH_CM4,__CC_ARM,__FPU_USED =1,__FPU_PRESENT = 1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Libraries\CMSIS\Include;..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\..\Libraries\FreeRTOS\include;..\..\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F;..\..\BSP;..\..\Devices;..\..\Apps;..\..\Tasks;..\..\User</IncludePath>
+              <IncludePath>..\..\Libraries\CMSIS\Include;..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\..\Libraries\FreeRTOS\include;..\..\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F;..\..\BSP;..\..\Devices;..\..\Apps;..\..\Tasks;..\..\User;..\..\Libraries\SEEGER\RTT\RTT</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1376,6 +1406,11 @@
               <FileName>SCCM.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Devices\SCCM.c</FilePath>
+            </File>
+            <File>
+              <FileName>MC01_JudgeSystem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Devices\MC01_JudgeSystem.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1752,6 +1787,31 @@
               <FileName>stm32f4xx_wwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SEEGER/RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\SEEGER\RTT\RTT\SEGGER_RTT.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Libraries\SEEGER\RTT\RTT\SEGGER_RTT.h</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_Conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Libraries\SEEGER\RTT\RTT\SEGGER_RTT_Conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\SEEGER\RTT\RTT\SEGGER_RTT_printf.c</FilePath>
             </File>
           </Files>
         </Group>

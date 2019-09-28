@@ -35,6 +35,8 @@ void vTaskPowerCalc(void *pvParameters)
 	
 	while(1)
 	{
+    Measurement_update();
+    
     Judge_PowerHeatData.chassisVolt = measurement.bat_voltage;
     Judge_PowerHeatData.chassisCurrent = measurement.bat_current;
     Judge_PowerHeatData.chassisPower = Judge_PowerHeatData.chassisVolt*Judge_PowerHeatData.chassisCurrent;
